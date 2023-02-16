@@ -20,4 +20,7 @@ I looked at various hosting options, the most tempting of which was [hosting it 
 
 I was aware of Github pages, and settled on using that, because it is about as hands-off as it is possible to be. When combined with [Jekyll](https://jekyllrb.com/), the level of automation you get really is impressive. The only Terraform I needed to write was to manage the route53 domain so that users can access the blog at this URL rather than the default Github pages one. 
 
+### Theme
+
+The default theme for Jekyll, 'minima', is actually pretty nice, but I wanted a bit more customisation, and after some research came across the ['basically basic'](https://github.com/mmistakes/jekyll-theme-basically-basic) theme, which seemed to fit the 'functional and presentable' requirement, it was easy to set up, and had plenty of options for further customisation if I needed (unlikely if it means I have to write HTML/CSS...).
 
