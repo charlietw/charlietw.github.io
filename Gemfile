@@ -4,8 +4,8 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "github-pages", "~> 227"
+gem "github-pages", "~> 228"
 
-gem "jekyll", "~> 3.9"
+gem "jekyll", "~> 3.9.3"
 
 gem "webrick", "~> 1.7"
