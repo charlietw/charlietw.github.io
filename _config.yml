@@ -1,4 +1,4 @@
-theme: jekyll-theme-basically-basic
+#theme: jekyll-theme-basically-basic
 remote_theme: "mmistakes/jekyll-theme-basically-basic@1.4.5"
 title: Charlie's blog
 description: Random musings
