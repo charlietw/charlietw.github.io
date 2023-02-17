@@ -3,6 +3,7 @@ layout: post
 title: "Blog setup"
 image:  /assets/banner.jpg
 
+
 ---
 
 ## Hello, world!

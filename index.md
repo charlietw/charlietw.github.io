@@ -1,15 +1,24 @@
 ---
 layout: page
-title: Home
+image:  /assets/banner.jpg
 ---
 
-# charlietw.github.io on INDEX
+Probably not worth reading.
 
+<html>
+{% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+      <h1>{{ year.name }}</h1>
+      {% assign postsByMonth = year.items | group_by_exp:"post", "post.date | date: '%B'" %}
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    </li>
-  {% endfor %}
-</ul>
+      {% for month in postsByMonth %}
+        <h2>{{ month.name }}</h2>
+        <ul>
+          {% for post in month.items %}
+            <li><a href="{{ post.url }}">{{ post.title }} - {{ post.date | date: '%A %e %B' }}</a></li>
+          {% endfor %}
+        </ul>
+
+      {% endfor %}
+    {% endfor %}
+</html>
