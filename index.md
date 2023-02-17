@@ -3,7 +3,7 @@ layout: page
 image:  /assets/banner.jpg
 ---
 
-Probably not worth reading.
+<p class="text-left">"Probably not worth reading."</p>
 
 <html>
 {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
